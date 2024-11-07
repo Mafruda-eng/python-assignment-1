@@ -1,0 +1,7 @@
+def filter_long_words(words, n):
+    long_words = [word for word in words if len(word) > n]
+    return long_words
+
+words = ["apple", "banana", "cherry", "date", "blueberry"]
+n = 5
+print("Words longer than", n, "characters:", filter_long_words(words, n))  
