@@ -1,0 +1,21 @@
+state_capitals = {
+    "Alabama": "Montgomery",
+    "Alaska": "Juneau",
+    "Arizona": "Phoenix",
+    "Arkansas": "Little Rock",
+    "California": "Sacramento",
+    "Colorado": "Denver",
+    "Connecticut": "Hartford",
+    "Delaware": "Dover",
+    "Florida": "Tallahassee",
+    "Georgia": "Atlanta"
+
+}
+
+state = input("Enter the name of the state: ")
+
+capital = state_capitals.get(state)
+if capital:
+    print(f"The capital of {state} is {capital}.")
+else:
+    print("State not found in the dictionary.")
