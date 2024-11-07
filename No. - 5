@@ -1,0 +1,9 @@
+def map_words_to_lengths(words):
+    
+    word_lengths = [len(word) for word in words]
+    return word_lengths
+
+
+words = ["apple", "banana", "cherry", "date", "blueberry"]
+print("Lengths of the words:", map_words_to_lengths(words))  
+
