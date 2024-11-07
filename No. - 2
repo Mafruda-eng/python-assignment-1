@@ -1,0 +1,10 @@
+def find_longest_word(words):
+
+    word_lengths = [(word, len(word)) for word in words]
+    
+    longest_word = max(word_lengths, key=lambda x: x[1])
+    
+    return longest_word[1]
+
+words = ["apple", "banana", "cherry", "blueberry"]
+print("Length of the longest word:", find_longest_word(words))  # Output: 9
